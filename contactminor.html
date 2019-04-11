@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+height:100vh;
+background-color:#0080ff;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+margin:0;
+}
+
+
+.split {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+
+div.Titlebar{
+	height:50px;
+	width: 100%;
+        position:absolute;
+        top:645px;
+	background-color: rgba(221, 160, 221,0.8);
+	
+}
+
+div.logback{
+	height:450px;
+	width:400px;
+	background-color: #F4A460;
+	position:absolute;
+	right:20px;
+	top:100px;
+	padding-top:20px;
+	padding-left:20px;
+	font-family:"Arial";
+	font-size:20px;
+	border-width: 5px;
+	border-radius: 25px;
+	box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.5);
+	
+}
+div.follow{
+	font-family: "Arial";
+	font-weight: bold;
+	color:white;
+	padding-top:15px;
+	font-size:50px;
+	text-shadow: 1px 1px 2px black, 0 0 25px #F0FFFF, 0 0 5px #800000;
+}
+div.word{
+	color:aqua;
+	position:absolute;
+	left:40px;	
+	top:440px;
+        font-size:25px;	
+}
+textarea{
+        position:absolute;
+	left:40px;
+        font-size:20px;	
+}
+input[type=email]{
+	font-size:20px;
+}
+input[type=text]{
+	font-size:20px;
+	width:70px;
+}
+input[type=button]{
+	background-color:rgb(255,182,193);
+	height:50px;
+	width:130px;
+	position:absolute;
+	left:40px;	
+	top:540px;
+	font-size:30px;
+	
+}
+
+input[type=button]:hover{
+	background-color:rgb(220,20,60);
+	
+}
+</style>
+</head>
+<body>
+<div class="follow">Contact Us
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp<font color="#DC143C"> Your Message</font>
+</div><br>
+<textarea rows="12" cols="64">
+</textarea>
+<form action="">
+<div class="word">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Word count is: <input type="text" name="count" disabled> <br>
+&nbsp &nbsp &nbsp E-mail ID: <input type="email" name="id" multiple><br>
+</div>
+<input type="button" name="send" value="Send" >
+</form>
+<div class="Titlebar"></div>
+
+<div class="logback">
+<b></b>
+
+</div>
+
+</body>
+</html>
